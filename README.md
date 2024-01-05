@@ -17,6 +17,10 @@
    - RGB (text)
    - Pigment (rectangle filled with the desired color)
 
+Example:
+   - ![image](https://github.com/FabriBorgobello/figma-get-color-detail/assets/57123494/2dd6c8bb-eff7-4bb8-a913-bfae37e9480f)
+
+
 ## Development
 
 - **Watch**: Use `npm run watch` for real-time code compilation while developing. This script watches for any changes in the code and rebuilds automatically.
