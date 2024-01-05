@@ -1,40 +1,32 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# Color Details Figma Plugin
 
-  https://www.figma.com/plugin-docs/plugin-quickstart/
+## Project Overview and Description
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+`get-colors-details` is a Figma plugin that enhances design workflow by extracting and displaying color variations from selected elements. It showcases different color formats like Hex, HSL, and RGB in adjacent labels, making it invaluable for designers who need to work with consistent color schemes and require quick access to color details.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## How to Use
 
-  https://nodejs.org/en/download/
+1. **Clone the Repository**: Run `git clone https://github.com/FabriBorgobello/figma-get-color-detail` in your terminal to clone the repository.
+2. **Install Dependencies**: Run `npm install` to install required dependencies.
+3. **Build the Package**: Execute `npm run build` to build the plugin. A new file called code.js will be created in the root folder.
+4. **Import into Figma**: Add the built plugin to your Figma application.
+5. **Select a Frame**: In Figma, select a frame containing all the **Color** elements. These elements should be instances of a main component that includes:
+   - Name (text)
+   - HEX (text)
+   - HSL (text)
+   - RGB (text)
+   - Pigment (rectangle filled with the desired color)
 
-Next, install TypeScript using the command:
+## Development
 
-  npm install -g typescript
+- **Watch**: Use `npm run watch` for real-time code compilation while developing. This script watches for any changes in the code and rebuilds automatically.
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+## Requirements
 
-  npm install --save-dev @figma/plugin-typings
+- **Figma**: The plugin is designed to be used within the Figma environment.
+- **Node.js**: Required for managing dependencies and running build scripts.
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+## Dependencies
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+- `@figma/plugin-typings`: TypeScript typings for Figma Plugin API.
+- `typescript`: TypeScript language support.
